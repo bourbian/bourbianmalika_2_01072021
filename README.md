@@ -1,1 +1,1 @@
-# p2_bourbian-malika
+# p2_bourbian_malika
