@@ -1,13 +1,9 @@
-#conteneur >div
+/*#conteneur >div
 {
     flex-wrap: wrap;
     font-family : 'Raleway' ;
-}
-    /**
- {
-    border: 1px solid black;
 }*/
-.header
+header
 {
 width: auto;
 display: flex;
@@ -34,14 +30,29 @@ margin-right: 40px;
 
 }
 
-.partie2
+nav
 {
     width: auto;
     display:flex;
     justify-content:space-around;
     margin-right: 20px;
     flex-wrap: wrap;
-    
+}
+#ville
+{
+    width: auto; height: 30px; font-weight: bold;
+}
+#brechercher1
+{
+color:white; background-color:#0065FC; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem;
+border: none;
+padding: 10px;
+/*font-family: raleway;*/
+}
+#brechercher2
+{
+width: 45px; height: 35px; color:white; background-color:#0065FC; border-radius: 20%; border: none;
+display: none;
 }
 .trouver
 {
@@ -49,6 +60,7 @@ margin-right: 40px;
     flex-wrap: wrap;
 }
 .centre
+
 {
     font-weight: normal;
     font-size: 12px;
@@ -62,13 +74,8 @@ input
     border-style: none;
     border:1px solid #F2F2F2;
 }
-button
-{
-    display: none;
-    
-    
-}
-#menu
+/*#menu*/
+section1
 {
     
     display:flex;
@@ -93,6 +100,7 @@ button
     border: 1x solid black;
     padding: 8px;
     margin-right: 15px; 
+    color: #0065FC;
 }
 .fa-map-marker-alt
 {
@@ -102,6 +110,10 @@ button
     padding: 8px;
     height: 20px;
     
+}
+.fa-info-circle
+{
+    color:#0065FC; 
 }
 .rechercher1
 {
@@ -149,7 +161,7 @@ flex-wrap: wrap;
     text-decoration:underline;
 }
 
-.touthebergement
+section2
 {
     display: flex;
     height: auto;
@@ -180,6 +192,13 @@ flex-wrap: wrap;
 .fa-star
 {
     font-size:10px;
+    color:#0065FC;
+}
+#fa-star2
+{
+    font-size:10px;
+    color:#F2F2F2;
+} 
 }
 .disc
 {
@@ -227,8 +246,11 @@ strong, .fa-euro-sign
     font-size: 12px;
     color: gray;
     font-family : 'Raleway';
-    
-}
+    font-size: 12px;
+   /*margin-top: -15px;
+   margin-bottom: 15px;*/
+   
+}*/
 .populaire
 {
     width: 100%;
@@ -339,7 +361,7 @@ disc1
     margin-bottom: 20px;
 }
     
-#pieddepage
+footer
 {
     width: 100%;
     height: auto;
@@ -357,9 +379,9 @@ p
     {
         font-weight: bold;
     }
-#pieddepage > div
+footer > div
 {
-margin-right: 150px;
+margin-right: 250px;
 margin-left:20px;
 }
 .fonctionnement, .condition, .donnees, .charte, .soumettre, .centre2, .contacter
@@ -375,7 +397,7 @@ margin-left:20px;
 }
 @media screen and (max-width: 640px) 
  {
-  .rechercher1, .partie2, .plus-de-logement, .filtres, .hebergement, .acti, #pieddepage, .touthebergement
+  .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
      {
        
          flex-direction: column;        
@@ -395,11 +417,11 @@ margin-left:20px;
     {
      position: relative; left: 0; top: 20px; width: 50%; height: 35px;
     }
-    button
+    #brechercher2
         {
         display: inline-block;
         }
-    .boutton
+    #brechercher1
     {
         display:none;
     }
@@ -414,11 +436,11 @@ margin-left:20px;
       
     }
     
-    .header{
+    header{
         flex-direction: row;
         margin-bottom: 50px;
     }
-    .partie2
+    nav
     {
         display: flex;
         flex-direction:column-reverse;
