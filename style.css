@@ -1,16 +1,18 @@
-/*#conteneur >div
-{
-    flex-wrap: wrap;
-    font-family : 'Raleway' ;
-}*/
+
 header
 {
 width: auto;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
+font-family: 'raleway';
+font-weight: bold;
 }
-
+@font-face 
+{
+    font-family: 'raleway';
+    src: url('Raleway-Bold.ttf');
+}
 .hebergement
 {
     color: #0065FC;
@@ -24,6 +26,7 @@ flex-wrap: wrap;
 .activite
 {
 margin-right: 40px;
+color:black;
 }
 .heber-activ
 { display:flex;
@@ -40,24 +43,29 @@ nav
 }
 #ville
 {
-    width: auto; height: 30px; font-weight: bold;
+    width: auto; height: 30px; font-weight: bold; font-family: 'raleway';
 }
 #brechercher1
 {
 color:white; background-color:#0065FC; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem;
 border: none;
 padding: 10px;
-/*font-family: raleway;*/
+font-family: 'raleway';
 }
 #brechercher2
 {
 width: 45px; height: 35px; color:white; background-color:#0065FC; border-radius: 20%; border: none;
 display: none;
+font-family: 'raleway';
 }
-.trouver
+/*.trouver
 {
     padding-top: 50px;
     flex-wrap: wrap;
+    font-family: 'raleway';
+}*/
+h3{
+    font-family: 'raleway';
 }
 .centre
 
@@ -66,16 +74,14 @@ display: none;
     font-size: 12px;
    margin-top: -15px;
    margin-bottom: 15px;
-   font-family : Raleway;
-   padding-top: 20px;
+   padding-top: 5px;
 }
 input
 {
     border-style: none;
     border:1px solid #F2F2F2;
 }
-/*#menu*/
-section1
+#menu
 {
     
     display:flex;
@@ -84,7 +90,7 @@ section1
 } 
 .nom, .nom1, .descr3
 {
-    font-family: raleway;
+    font-family: 'raleway';
     font-weight: bold;
 }
 .prix
@@ -92,12 +98,12 @@ section1
     font-weight: normal;
     font-size:11px;
     color:gray;
+    font-family: 'raleway';
 }
 .fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave
 {
     background-color:#DEEBFF;
     border-radius: 50%;
-    border: 1x solid black;
     padding: 8px;
     margin-right: 15px; 
     color: #0065FC;
@@ -121,6 +127,7 @@ section1
     justify-content: flex-start;
     display: flex;  
     flex-wrap: wrap;
+    font-family: 'raleway';
 }
 
 .filtres
@@ -132,6 +139,7 @@ justify-content:flex-start;
 margin-top: 30px;
 padding-right: 5px;
 flex-wrap: wrap;
+font-family: 'raleway';
 }
 .eco-fami
 {
@@ -154,6 +162,7 @@ flex-wrap: wrap;
     font-weight: bold;
     margin-right: 30px;
     padding-right: 30px; 
+    font-family: 'raleway';
 }
 .economique:hover, .familial:hover, .romantique:hover, .animaux:hover
 {
@@ -161,11 +170,12 @@ flex-wrap: wrap;
     text-decoration:underline;
 }
 
-section2
-{
+.touthebergement
+{ 
     display: flex;
     height: auto;
-    justify-content: space-around;
+    justify-content:space-around;
+    /*font-family: 'raleway';*/
 }
 .case
 {
@@ -178,6 +188,7 @@ section2
     border-style: none;
     border-radius: 15px;
     padding: 3px;
+    font-family: 'raleway';
     
 }
 .case1, .case2, .case3, .case4, .case5, .case6, .case7, .case8, .case9
@@ -194,24 +205,25 @@ section2
     font-size:10px;
     color:#0065FC;
 }
-#fa-star2
+.fa-star.gold
 {
     font-size:10px;
     color:#F2F2F2;
-} 
-}
-.disc
+} */
+
+/*.disc
 {
-    padding:10px;
-}
-strong, .fa-euro-sign
+    padding: 10px;
+}*/
+/*strong, .fa-euro-sign
 {
     color:black;
 
-}
+}*/
 .fa-euro-sign
 {
     margin-left:-2px;
+    
 }
 .hebergement1
 {
@@ -227,7 +239,7 @@ strong, .fa-euro-sign
     margin-top: -30px;
     margin-left: 15px;
     font-weight: bold;
-    font-family: raleway;
+    font-family: 'raleway';
     font-size:13px;
 }
 .contain
@@ -247,18 +259,18 @@ strong, .fa-euro-sign
     color: gray;
     font-family : 'Raleway';
     font-size: 12px;
-   /*margin-top: -15px;
-   margin-bottom: 15px;*/
+  
    
-}*/
-.populaire
+}
+/*.populaire
 {
     width: 100%;
     margin-top: 5px;
     margin-left: 15px;
     display: flex;
     flex-wrap: wrap;
-}
+   
+}*/
 .fa-chart-line
 {
     margin-left: 180px;
@@ -272,6 +284,7 @@ strong, .fa-euro-sign
     margin-right: 15px;
     margin-bottom: 10px;
     margin-left: 10px;
+    font-family: 'raleway';
 }
 
 .populaire2
@@ -284,7 +297,7 @@ strong, .fa-euro-sign
     border-radius: 15px;
     padding: 20px;
     margin-top: 2px;
-    
+    font-family: 'raleway';
 }
 
 .image2 > img:first-child
@@ -298,39 +311,27 @@ strong, .fa-euro-sign
 {
 margin-top: 10px;
 margin-bottom: 35px;
-/*padding: 10px;*/
 font-size:14px;
+font-family: 'raleway';
 }
 .nom
 {
     font-size:14px;
+    font-family: 'raleway';
 }
 disc1
 {
     padding:10px;
 }
-.activite1
-{
-    width: 100%;
-   /* height: 5%;*/
-    /*background-color: cornsilk;*/
-    font-weight: bold;
-    padding: 20px;
-    margin-top: 40px;
-    box-sizing: border-box;
 
-}
 .acti
 {
     width: auto;
     height: auto;
-
-   /* background-color: brown; */
-   /* padding-inline-end: 10px;*/
-    /* flex-direction: column;*/
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
+    font-family: 'raleway';
 }
 .ph2
 {
@@ -353,7 +354,7 @@ disc1
    padding: 10px;
     font-size: 12px;
     width: auto;
-
+    font-family: 'raleway';
     
 }
 .photo2, .photo5
@@ -371,7 +372,7 @@ footer
     padding-top: 20px;
     margin-top: 40px;
     border-style: none;
-
+    font-family: 'raleway';
     
 }
 
@@ -384,20 +385,23 @@ footer > div
 margin-right: 250px;
 margin-left:20px;
 }
+
 .fonctionnement, .condition, .donnees, .charte, .soumettre, .centre2, .contacter
 {
-    padding:5px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: serif;
 }
 
 
-.image3 :img:first-child
+.image3 , img:first-child
 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
 }
 @media screen and (max-width: 640px) 
  {
-  .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
+  .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, #touthebergement
      {
        
          flex-direction: column;        
