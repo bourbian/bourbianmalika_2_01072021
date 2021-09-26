@@ -401,7 +401,7 @@ margin-left:20px;
 }
 @media screen and (max-width: 640px) 
  {
-  .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, #touthebergement
+  .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
      {
        
          flex-direction: column;        
