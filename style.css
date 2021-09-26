@@ -404,7 +404,8 @@ margin-left:20px;
   .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
      {
        
-         flex-direction: column;        
+         flex-direction: column;  
+         flex-wrap: wrap;
        
      }
     
