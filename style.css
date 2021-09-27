@@ -5,10 +5,7 @@ width: auto;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-font-family: 'raleway';
-
-padding-top: 25px;
-
+font-family:sans-serif;
 }
 .logo1
 {
@@ -18,12 +15,17 @@ padding-top: 25px;
 {
     font-family: 'raleway';
     src: url('Raleway-Bold.ttf');
+   
+}
+.trait
+{
+    border: 1px solid #0065FC;
+     margin-bottom: 30px;
 }
 .hebergement
 {
     color: #0065FC;
     margin-right: 40px;
-    text-decoration:overline;
 }
 .imghebergement
 {
@@ -42,8 +44,11 @@ a
 .inscrire
 {
     color:#0065FC;
-  
+    margin-top: 30px;
+   
 }
+  
+
 #av
 {
     color: black;
@@ -52,7 +57,9 @@ a
 {
 margin-right: 40px;
 color:black;
+margin-top: 30px;
 }
+
 .heber-activ
 { display:flex;
 
@@ -65,8 +72,10 @@ nav
     justify-content:space-around;
     margin-right: 20px;
     flex-wrap: wrap;
-    
+   
 }
+    
+
 #ville
 {
     width: auto; height: 30px; font-weight: bold; font-family: 'raleway';
@@ -92,8 +101,9 @@ h3
 .centre
 
 {
-    font-weight: normal;
-    font-size: 12px;
+   font-style:unset;
+   color:gray;
+    font-size: 10px;
    margin-top: -15px;
    margin-bottom: 15px;
    padding-top: 5px;
@@ -241,8 +251,12 @@ font-family: 'raleway';
 .fa-euro-sign
 {
     margin-left:-2px;
+    /*font-family: sans-serif;*/
+    color: black;
     
 }
+strong
+{ color: black;}
 .hebergement1
 {
     width: 100%;
@@ -431,7 +445,7 @@ margin-left:20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
 }
-@media screen and (max-width: 640px) 
+@media screen and (max-width: 750px) 
  {
     .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
         {
@@ -440,7 +454,18 @@ margin-left:20px;
          flex-wrap: wrap;      
        
         }
-    
+        #menu
+        {
+            padding-top: 15px;
+        }
+    .trait
+    {
+        visibility:hidden;
+    }
+    .filtres
+    {
+        padding: 10px;
+    }
     .populaire2
         {
         position: relative ;
@@ -465,25 +490,30 @@ margin-left:20px;
     .inscrire
         {
         order: 1;
-        padding: 5px;
+        /*padding: 5px;*/
+        margin-top: 7px;
         }
     .hebergement
         {
-       margin-right: 100px;
-       text-decoration:underline;
+      /* margin-right: 100px;*/
+       text-decoration: underline;
+      
         }
     header
         {
         flex-direction: row;
         margin-bottom: 50px;
+        padding-bottom: 20px;
         }
     nav
         {
         display: flex;
         flex-direction:column-reverse;
-        
-       
-        }
+         }
+         .debut
+         {
+             margin-bottom: 10px;
+         }
     .heber-activ
         {
         display: flex;
@@ -491,6 +521,8 @@ margin-left:20px;
         position:absolute; top: 50px; left: 15px; width: 80%; height: auto; 
         margin-top: 35px;
         justify-content: space-between;
+        border-bottom: 1px solid #DEEBFF ;
+        
         }
 
     .nom1
