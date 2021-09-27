@@ -6,7 +6,9 @@ display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 font-family: 'raleway';
-font-weight: bold;
+
+padding-top: 25px;
+
 }
 @font-face 
 {
@@ -17,11 +19,22 @@ font-weight: bold;
 {
     color: #0065FC;
     margin-right: 40px;
+    text-decoration:overline;
+}
+a
+{
+    text-decoration: none;
+    color:#0065FC;
+    
 }
 .inscrire
 {
     color:#0065FC;
   
+}
+#av
+{
+    color: black;
 }
 .activite
 {
@@ -40,6 +53,7 @@ nav
     justify-content:space-around;
     margin-right: 20px;
     flex-wrap: wrap;
+    
 }
 #ville
 {
@@ -58,13 +72,9 @@ width: 45px; height: 35px; color:white; background-color:#0065FC; border-radius:
 display: none;
 font-family: 'raleway';
 }
-/*.trouver
+
+h3
 {
-    padding-top: 50px;
-    flex-wrap: wrap;
-    font-family: 'raleway';
-}*/
-h3{
     font-family: 'raleway';
 }
 .centre
@@ -75,6 +85,7 @@ h3{
    margin-top: -15px;
    margin-bottom: 15px;
    padding-top: 5px;
+
 }
 input
 {
@@ -87,7 +98,9 @@ input
     display:flex;
     flex-direction: column;
     font-weight: bold;
-} 
+    font-family: 'raleway';
+}
+ 
 .nom, .nom1, .descr3
 {
     font-family: 'raleway';
@@ -175,7 +188,7 @@ font-family: 'raleway';
     display: flex;
     height: auto;
     justify-content:space-around;
-    /*font-family: 'raleway';*/
+    
 }
 .case
 {
@@ -199,6 +212,8 @@ font-family: 'raleway';
     margin-top: -15px;
     padding-bottom: 1px;
     border-radius: 15px;
+   
+
 }
 .fa-star
 {
@@ -211,15 +226,6 @@ font-family: 'raleway';
     color:#F2F2F2;
 } */
 
-/*.disc
-{
-    padding: 10px;
-}*/
-/*strong, .fa-euro-sign
-{
-    color:black;
-
-}*/
 .fa-euro-sign
 {
     margin-left:-2px;
@@ -302,8 +308,9 @@ font-family: 'raleway';
 
 .image2 > img:first-child
 {
-    border-top-left-radius: 20px;
+   border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
     margin-right: 20px;
     
 }  
@@ -355,11 +362,13 @@ disc1
     font-size: 12px;
     width: auto;
     font-family: 'raleway';
+    box-shadow: 2px 1px #F2F2F2;
     
 }
 .photo2, .photo5
 {
     margin-bottom: 20px;
+   
 }
     
 footer
@@ -401,99 +410,100 @@ margin-left:20px;
 }
 @media screen and (max-width: 640px) 
  {
-  .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
-     {
+    .rechercher1, nav, .plus-de-logement, .filtres, .hebergement, .acti, footer, .touthebergement
+        {
        
          flex-direction: column;  
-         flex-wrap: wrap;
+         flex-wrap: wrap;      
        
-     }
+        }
     
     .populaire2
-    {
+        {
         position: relative ;
         width: 80%;
         order: -8;
         padding: 2px;
         margin-bottom: 5px;
     
-    }
+        }
     .rechercher1
-    {
+        {
      position: relative; left: 0; top: 20px; width: 50%; height: 35px;
-    }
+        }
     #brechercher2
         {
         display: inline-block;
         }
     #brechercher1
-    {
+        {
         display:none;
-    }
+        }
     .inscrire
-    {
+        {
         order: 1;
         padding: 5px;
-    }
+        }
     .hebergement
-    {
+        {
        margin-right: 100px;
-      
-    }
-    
-    header{
+       text-decoration:underline;
+        }
+    header
+        {
         flex-direction: row;
         margin-bottom: 50px;
-    }
+        }
     nav
-    {
+        {
         display: flex;
         flex-direction:column-reverse;
-    }
+        
+       
+        }
     .heber-activ
-    {
+        {
         display: flex;
         width: 100%;
         position:absolute; top: 50px; left: 15px; width: 80%; height: auto; 
-        margin-top: 15px;
+        margin-top: 35px;
         justify-content: space-between;
-    }
+        }
 
     .nom1
-    {
-    
+        {
         margin-bottom: 20px;
-        
-    }
+        }
     .case7, .case8, .case9
-    {
-    margin-bottom: 30px;
-    }
+        {
+        margin-bottom: 30px;
+        }
     .case
-    {
-    background-color: white;
-    }
-    
-
+        {
+         background-color: white;
+        }
     .fa-map-marker-alt
-    {
+        {
         width: auto;    
-    }
+        }
     .romantique, .animaux
-    {
+        {
         width: 50%;
         margin-bottom: 5px;
-    }
+        }
     .eco-fami
-    {
+        {
         margin-bottom: 5px;
-    }
+        }
     .descr3
-    {
+        {
         width: 59%;
+        }
+   .contain
+        {
+           
+            height: 150px;
+            
+        }
     }
-    .contain
-    {
-        height: 150px;
-    }
-    }    
+       
