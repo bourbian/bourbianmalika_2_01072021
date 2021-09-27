@@ -10,6 +10,10 @@ font-family: 'raleway';
 padding-top: 25px;
 
 }
+.logo1
+{
+   width:50px; height:40px;
+}
 @font-face 
 {
     font-family: 'raleway';
@@ -20,6 +24,14 @@ padding-top: 25px;
     color: #0065FC;
     margin-right: 40px;
     text-decoration:overline;
+}
+.imghebergement
+{
+    width:250px; height:150px;
+}
+.imgpopulaire
+{
+    width:120px; height: 130px;
 }
 a
 {
@@ -224,7 +236,7 @@ font-family: 'raleway';
 {
     font-size:10px;
     color:#F2F2F2;
-} */
+}
 
 .fa-euro-sign
 {
@@ -248,13 +260,21 @@ font-family: 'raleway';
     font-family: 'raleway';
     font-size:13px;
 }
-.contain
-{
-    object-fit:cover;
+
+.imgactivite
+{   object-fit:cover;
+     width:295px;
+     height:300px;
+     border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+.imgactivite2
+{   object-fit:cover;
+    width:295px;
+    height:120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
-
-}
+    }
 .plus-de-logement
 {
     flex-wrap: wrap;
@@ -330,7 +350,10 @@ disc1
 {
     padding:10px;
 }
-
+h4{
+    margin-left: 20px;
+    font-family: 'raleway';
+}
 .acti
 {
     width: auto;
@@ -362,7 +385,7 @@ disc1
     font-size: 12px;
     width: auto;
     font-family: 'raleway';
-    box-shadow: 2px 1px #F2F2F2;
+    box-shadow: 4px 2px #F2F2F2;
     
 }
 .photo2, .photo5
@@ -499,11 +522,14 @@ margin-left:20px;
         {
         width: 59%;
         }
-   .contain
+   .imgactivite
         {
            
-            height: 150px;
-            
+            height: 130px;
+        }
+    .ph1, .ph3
+        {
+            padding-bottom: 15px;
         }
     }
        
