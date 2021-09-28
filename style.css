@@ -495,8 +495,8 @@ margin-left:20px;
         }
     .hebergement
         {
-      /* margin-right: 100px;*/
-       text-decoration: underline;
+
+       border-bottom:1px solid #0065FC  ;
       
         }
     header
